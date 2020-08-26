@@ -32,7 +32,7 @@ app.post('/api/email', (req, res, next) => {
     }
 
     sgMail.send(msg)
-        .then(result => {
+        .then(res => {
 
             res.status(200).json({
                 success: true
